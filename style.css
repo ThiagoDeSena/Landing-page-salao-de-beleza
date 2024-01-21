@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Menu */
+
+.content{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #1f1e1f; */
+    background-color: #ff3131;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo{
+    
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo h3{
+    color: #ffffff;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+.content .list-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a{
+    padding: 3rem 1rem 2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom:4px solid #ffffff;
+    color: #1f1e1f;
+}
+
+/* first-section */
+
+.first-section{
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)),url(imagens/loiro-mulher-com-telefone-movel-obtendo-dela-cabelo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1{
+    color: #ff3131;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.first-section h2{
+    color: #f2e5dc;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.btn button{
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ff3131;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover{
+    border: 1px solid #ff3131;
+    background-color: transparent;
+    color: #ff3131;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sobre nós */
+
+.sobre-nos{
+    background-color: #ff3131 ;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img{
+    width: 400px;
+    height: auto;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid #ffffff ;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.contentsobre p{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+
+/* Serviços */
+
+.servicos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f2e5dc; */
+    background-color: rgba(12,12,12,0.8);
+}
+
+.servicos h2{
+    font-size: 5rem;
+    color: #f2e5dc;
+    text-transform: uppercase;
+}
+
+.itens-servicos{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-servicos .info{
+    background-color:rgb(221,221,221) ;
+    border: none;
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-servicos .info h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-servicos .info h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-servicos .info h4 span{
+    font-size: 1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-servicos .info .asterisco{
+    font-weight: bold;
+}
+
+.itens-servicos div{
+    background-color: #FE8F8F;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-servicos img{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
+
+/* Alinhamento da imagem que está dentro da div */
+/* .itens-servicos div{
+    margin-left: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} */
+
+.itens-servicos .info .pedir{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #ffc506 ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.itens-servicos .info .pedir:hover{
+    background-color: #FE8F8F ;
+    color: white;
+}
+
+/* Contatos */
+
+.contatos{
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos-secao a{
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-secao a:hover{
+    color:#FE8F8F ;
+}
+
+.contatos h3{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i{
+    margin-right: 1rem;
+}
+
+footer{
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
