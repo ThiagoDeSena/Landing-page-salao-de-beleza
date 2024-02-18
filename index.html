@@ -13,7 +13,7 @@
     
     <header class="content">
         <div class="logo">
-            <img src="imagens/Logo de salão de beleza rosa.png" alt="">
+            <img src="imagens/Logo_de_salão_de_beleza_vermelho-removebg-preview.png" alt="">
             <h3>Rosy Cabeleireira</h3>
         </div>
         <nav>
@@ -40,8 +40,8 @@
             <h1>Rosy Cabeleireira</h1>
             <h2>Salão de Beleza</h2>
             <div class="btn">
-                <button class="agendar"><a href="https://wa.me/85986344404?text=Olá, quero agendar um horário para fazer meus cabelos!" target="_blank" ></a> Agendar Horário</button>
-                <button class="localizacao">Localização</button>
+                <button class="agendar" onclick="agendarHorario()"> Agendar Horário</button>
+                <button class="localizacao" onclick="localizacao()" >Localização</button>
             </div>
         </div>
     </section>
@@ -50,18 +50,10 @@
         <div class="main">
             <div class="contentsobre">
                 <h2>Sobre nós</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Iure fugit minima error, alias nobis iusto sit rerum cumque 
-                    laboriosam in! Fuga at sunt fugit? Perferendis iure accusantium 
-                    nam asperiores sint! Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    elit. Reprehenderit laborum autem earum nobis? Ipsam tenetur beatae quis 
-                    quibusdam, saepe cum dicta at earum qui, possimus eligendi molestiae doloribus 
-                    neque repellendus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Molestiae non quasi, iste cupiditate vero esse expedita ipsum delectus odit commodi 
-                    quas illo recusandae dignissimos temporibus tempore tenetur ex autem quod. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui adipisci consequatur 
-                    veritatis quidem maiores, magni deserunt? Obcaecati eligendi facere repellendus dolores 
-                    nobis ex, vitae, non maxime dolorum magnam pariatur?</p>
+                <p>O Salão de Beleza Rosy Cabeleireira está localizado na <a href="https://maps.app.goo.gl/ZrFMsq7WgKF7oURm7" target="_blank">Rua 70, n° 120a no Jereissati II</a>, oferecemos 
+                    uma variedade de serviços para mulheres que desejam cuidar da sua beleza e bem-estar. O ambiente é aconchegante 
+                    e moderno, os profissionais são experientes e qualificados, e os produtos são de alta qualidade. Além disso, o 
+                    salão oferece preços acessíveis e promoções frequentes. </p>
             </div>
             <div class="img-cozinha">
                 <img src="imagens/cabeleireiro-feminino-fazendo-penteado-para-mulher-morena-no-salao-de-beleza.jpg" alt="">
@@ -78,7 +70,7 @@
                     <h3>Corte</h3>
                     <h4>A partir de <span>*R$25.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir"  onclick="abrirWhatsApp('Corte de cabelo')" >Ver Preços</button>
                 </div>
             </div>
             <div >
@@ -87,7 +79,7 @@
                     <h3>Hidratação</h3>
                     <h4>A partir de <span>*R$50.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir" onclick="abrirWhatsApp('Hidratação')" >Ver Preços</button>
                 </div>
             </div>
             <div >
@@ -96,16 +88,16 @@
                     <h3>Botox</h3>
                     <h4>A partir de <span>*R$80.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir"  onclick="abrirWhatsApp('Botox')">Ver Preços</button>
                 </div>
             </div>
             <div >
                 <img src="imagens/cabeleireiro-faz-penteado-para-seu-cliente.jpg" alt="">
                 <div class="info">
                     <h3>Realinhamento dos Fios</h3>
-                    <h4>A partir de <span>*R$15.,00</span></h4>
+                    <h4>A partir de <span>*R$150.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir" onclick="abrirWhatsApp('Realinhamento dos Fios')">Ver Preços</button>
                 </div>
             </div>
             <div >
@@ -114,25 +106,25 @@
                     <h3>Aplicação de Tinta</h3>
                     <h4>A partir de <span>*R$25.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir"  onclick="abrirWhatsApp('Aplicação de Tinta')">Ver Preços</button>
                 </div>
             </div>
             <div >
                 <img src="imagens/woman-getting-treatment-hairdresser-shop.jpg" alt="">
                 <div class="info">
                     <h3>Definitiva</h3>
-                    <h4>A partir de <span>*R$25.,00</span></h4>
+                    <h4>A partir de <span>*R$250.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir" onclick="abrirWhatsApp('Definitiva')">Ver Preços</button>
                 </div>
             </div>
             <div >
                 <img src="imagens/cabeleireiro-faz-penteado-para-seu-cliente.jpg" alt="">
                 <div class="info">
                     <h3>Alisamento com Tioglicolato</h3>
-                    <h4>A partir de <span>*R$25.,00</span></h4>
+                    <h4>A partir de <span>*R$250.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir"  onclick="abrirWhatsApp('Alisamento com Tioglicolato')">Ver Preços</button>
                 </div>
             </div>
             <div>
@@ -141,7 +133,7 @@
                     <h3>Escova</h3>
                     <h4>A partir de <span>*R$25.00</span></h4>
                     <span class="asterisco">*O preço poderá variar de acordo com o tamanho do cabelo</span>
-                    <button class="pedir">Pedir Agora</button>
+                    <button class="pedir"  onclick="abrirWhatsApp('Escova')">Ver Preços</button>
                 </div>
             </div>
         </div>
@@ -151,7 +143,7 @@
         <h3>Contatos</h3>
         <div class="contatos-secao">
             <div>
-                <a href="https://wa.me/85986344404?text=Olá, quero fazer meus cabelos!" target="_blank">
+                <a href="https://wa.me/5585986344404?text=Olá, quero fazer meus cabelos!" target="_blank">
                     <i class="bi bi-whatsapp"></i>
                     <span>(85)9 8634-4404</span>
                 </a>
@@ -172,7 +164,7 @@
     </section>
 
     <footer>
-        <h4>Desenvolvido por -> Thiago de Sena</h4>
+        <h4>Desenvolvido por -> <a href="https://www.linkedin.com/in/thiago-de-sena-ab5b09179/" target="_blank">Thiago de Sena</a></h4>
     </footer>
 
     <script src="./script.js"></script>
