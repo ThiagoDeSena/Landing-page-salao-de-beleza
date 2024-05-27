@@ -107,7 +107,7 @@ html{
 .first-section h1{
     color: #F23030;
     font-size: 6rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 1rem;
 }
 
@@ -115,7 +115,7 @@ html{
     color: #ffffff;
     font-size: 3rem;
     font-weight: 400;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 3rem;
 }
 
@@ -207,7 +207,7 @@ html{
 .servicos h2{
     font-size: 5rem;
     color: #f2e5dc;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .itens-servicos{
@@ -245,11 +245,12 @@ html{
     font-size: 1.4rem;
     text-transform: uppercase;
     margin-bottom: 0.6rem;
-    display: grid;
+    /* display: grid; */
     justify-content: center;
     align-items: center;
-    grid-template-columns: 150px 150px;
-    margin-left: 6rem;
+    /* grid-template-columns: 150px 150px; */
+    /* margin-left: 6rem; */
+    margin-left: 0rem;
 }
 
 .itens-servicos .info h4 span{
@@ -468,7 +469,7 @@ footer{
     }
 
     .itens-servicos .info h4{
-        margin-left: 12rem;
+        /* margin-left: 12rem; */
     }
 
     .contatos-secao{
